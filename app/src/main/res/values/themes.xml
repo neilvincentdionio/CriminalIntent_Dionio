@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CriminalIntent" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/sky_blue_primary</item>
+        <item name="colorOnPrimary">@color/sky_blue_on_primary</item>
+        <item name="colorPrimaryContainer">@color/sky_blue_primary_variant</item>
+        <item name="colorOnPrimaryContainer">@color/sky_blue_on_primary</item>
+        <item name="colorSecondary">@color/sky_blue_secondary</item>
+        <item name="colorOnSecondary">@color/sky_blue_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/sky_blue_secondary_variant</item>
+        <item name="colorOnSecondaryContainer">@color/sky_blue_on_primary</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.CriminalIntent" parent="Base.Theme.CriminalIntent" />
+</resources>

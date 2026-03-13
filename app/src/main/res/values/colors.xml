@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="crime_row_surface">#FFFDFDFD</color>
+    <color name="crime_row_divider">#1F000000</color>
+    <color name="crime_row_solved_accent">#6B8E23</color>
+    <color name="crime_row_police_accent">#FF000000</color>
+    <!-- Sky blue theme colors -->
+    <color name="sky_blue_primary">#2196F3</color>
+    <color name="sky_blue_primary_variant">#1976D2</color>
+    <color name="sky_blue_secondary">#03DAC6</color>
+    <color name="sky_blue_secondary_variant">#018786</color>
+    <color name="sky_blue_on_primary">#FFFFFF</color>
+    <color name="sky_blue_on_secondary">#000000</color>
+</resources>
