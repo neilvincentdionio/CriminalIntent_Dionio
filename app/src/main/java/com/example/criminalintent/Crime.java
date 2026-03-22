@@ -9,6 +9,8 @@ public class Crime {
     private Date date;
     private boolean solved;
     private boolean requiresPolice;
+    private String suspect;
+    private String suspectPhoneNumber;
 
     public Crime(UUID id) {
         this.id = id;
@@ -16,6 +18,8 @@ public class Crime {
         this.date = new Date();
         this.solved = false;
         this.requiresPolice = false;
+        this.suspect = "";
+        this.suspectPhoneNumber = "";
     }
 
     public Crime(UUID id, String title, Date date, boolean solved) {
@@ -60,5 +64,25 @@ public class Crime {
 
     public void setRequiresPolice(boolean requiresPolice) {
         this.requiresPolice = requiresPolice;
+    }
+
+    public String getSuspect() {
+        return suspect;
+    }
+
+    public void setSuspect(String suspect) {
+        this.suspect = suspect;
+    }
+
+    public String getSuspectPhoneNumber() {
+        return suspectPhoneNumber;
+    }
+
+    public void setSuspectPhoneNumber(String suspectPhoneNumber) {
+        this.suspectPhoneNumber = suspectPhoneNumber;
+    }
+
+    public String getPhotoFilename() {
+        return "IMG_" + id + ".jpg";
     }
 }
