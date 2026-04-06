@@ -70,17 +70,18 @@ public class CrimePagerActivity extends AppCompatActivity {
             }
         }
 
-        int startIndex = 0;
-        if (crimeId != null) {
-            for (int i = 0; i < crimes.size(); i++) {
-                if (crimeId.equals(crimes.get(i).getId())) {
-                    startIndex = i;
-                    break;
+        if (savedInstanceState == null) {
+            int startIndex = 0;
+            if (crimeId != null) {
+                for (int i = 0; i < crimes.size(); i++) {
+                    if (crimeId.equals(crimes.get(i).getId())) {
+                        startIndex = i;
+                        break;
+                    }
                 }
             }
+            viewPager.setCurrentItem(startIndex, false);
         }
-        viewPager.setCurrentItem(startIndex, false);
-        updateJumpButtons(startIndex);
 
         viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
@@ -88,6 +89,7 @@ public class CrimePagerActivity extends AppCompatActivity {
                 updateJumpButtons(position);
             }
         });
+        viewPager.post(() -> updateJumpButtons(viewPager.getCurrentItem()));
 
         firstButton.setOnClickListener(v -> viewPager.setCurrentItem(0, false));
         lastButton.setOnClickListener(v -> {

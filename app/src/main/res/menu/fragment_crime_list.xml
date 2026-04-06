@@ -4,5 +4,10 @@
     <item
         android:id="@+id/menu_item_show_subtitle"
         android:title="@string/show_subtitle"
-        app:showAsAction="ifRoom|withText" />
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_change_language"
+        android:title="@string/change_language"
+        app:showAsAction="never" />
 </menu>

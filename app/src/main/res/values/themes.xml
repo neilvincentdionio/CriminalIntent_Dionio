@@ -13,5 +13,17 @@
         <item name="android:statusBarColor">@color/black</item>
     </style>
 
+    <style name="ThemeOverlay.CriminalIntent.ToolbarPopup" parent="ThemeOverlay.Material3.Light">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="android:popupBackground">@color/white</item>
+        <item name="popupMenuStyle">@style/Widget.CriminalIntent.PopupMenu</item>
+    </style>
+
+    <style name="Widget.CriminalIntent.PopupMenu" parent="Widget.Material3.PopupMenu">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
     <style name="Theme.CriminalIntent" parent="Base.Theme.CriminalIntent" />
 </resources>
